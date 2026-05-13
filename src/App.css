@@ -1,0 +1,28 @@
+body{
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 100px;
+  background: #111;
+}
+.container{
+  max-width: 900px;
+  padding: 0 20px;
+  margin: 0 auto;
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+.newsletter {
+  background: orange;
+  color: #111;
+  margin: 20 0;
+  border-radius: 20px;
+  padding: 50px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out ;
+  visibility: hidden;
+}
+.newsletter.active{
+  transform: translateY(0px);
+  opacity: 1;
+  visibility: visible;
+}
